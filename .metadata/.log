@@ -1,0 +1,49 @@
+!SESSION 2016-08-24 14:48:53.243 -----------------------------------------------
+eclipse.buildId=4.5.0.I20150603-2000
+java.version=1.8.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-08-24 14:54:19.932
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\cjb'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.oomph.setup.core 4 0 2016-08-24 14:54:20.071
+!MESSAGE C:\Users\cjb\.eclipse\org.eclipse.oomph.setup\setups\locations.setup (拒绝访问。)
+!STACK 0
+java.io.FileNotFoundException: C:\Users\cjb\.eclipse\org.eclipse.oomph.setup\setups\locations.setup (拒绝访问。)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at java.io.FileOutputStream.<init>(Unknown Source)
+	at org.eclipse.emf.ecore.resource.impl.FileURIHandlerImpl$1.<init>(FileURIHandlerImpl.java:65)
+	at org.eclipse.emf.ecore.resource.impl.FileURIHandlerImpl.createOutputStream(FileURIHandlerImpl.java:65)
+	at org.eclipse.emf.ecore.resource.impl.ExtensibleURIConverterImpl.createOutputStream(ExtensibleURIConverterImpl.java:349)
+	at org.eclipse.oomph.setup.internal.core.util.UserURIHandlerImpl.createOutputStream(UserURIHandlerImpl.java:77)
+	at org.eclipse.emf.ecore.resource.impl.ExtensibleURIConverterImpl.createOutputStream(ExtensibleURIConverterImpl.java:349)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.save(ResourceImpl.java:996)
+	at org.eclipse.oomph.setup.internal.core.SetupContext.associate(SetupContext.java:449)
+	at org.eclipse.oomph.setup.internal.core.SetupContext.access$0(SetupContext.java:366)
+	at org.eclipse.oomph.setup.internal.core.SetupContext$1.run(SetupContext.java:360)
+	at org.eclipse.oomph.base.util.BaseUtil.execute(BaseUtil.java:232)
+	at org.eclipse.oomph.setup.internal.core.SetupContext.associate(SetupContext.java:356)
+	at org.eclipse.oomph.setup.internal.core.SetupContext.createSelf(SetupContext.java:235)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin.performStartup(SetupUIPlugin.java:416)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin.access$3(SetupUIPlugin.java:310)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin$1$1.run(SetupUIPlugin.java:210)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.epp.logging.aeri.ui 1 4 2016-08-24 14:54:31.666
+!MESSAGE The error reporting server is not available. Error reporting will be disabled until next restart. Version: 1.0.0.v20150617-0732
+!STACK 0
+org.eclipse.epp.internal.logging.aeri.ui.l10n.Logs$LogTraceException
+	at org.eclipse.epp.internal.logging.aeri.ui.l10n.Logs$LogTraceException.newTrace(Logs.java:382)
+	at org.eclipse.epp.internal.logging.aeri.ui.l10n.Logs.log(Logs.java:134)
+	at org.eclipse.epp.internal.logging.aeri.ui.l10n.Logs.log(Logs.java:126)
+	at org.eclipse.epp.internal.logging.aeri.ui.log.CheckServerAvailabilityJob.run(CheckServerAvailabilityJob.java:53)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
